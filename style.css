@@ -1,0 +1,1175 @@
+* {
+    margin: 5px 15px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+header {
+    color: white;
+    padding: 0 2rem;
+    height: 4.8rem;
+    display: grid;
+    align-items: center;
+}
+
+.container-header {
+    padding: 2rem 5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.div-logo {
+    display: flex;
+    margin: 10px;
+}
+
+.div-list {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 5px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 2rem;
+    text-align: left;
+}
+
+.menu-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.menu-link:hover {
+    border-bottom: 4px solid #ff9900;
+    padding-bottom: 4px;
+    transition-duration: 100ms;
+}
+
+.interface {
+    max-width: max-content;
+    margin: 10rem auto;
+    padding: 0 5%;
+}
+
+.slider {
+    flex: 1 0 auto;
+    height: 100vh;
+    position: relative;
+}
+
+.slider .slider-container .slider-box {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.slider .slider-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider .slider-box.ativo {
+    opacity: 1;
+    z-index: 11111;
+}
+
+.setas {
+    width: 100%;
+    height: 100%;
+    padding: 0 4%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 22222;
+}
+
+.setas button {
+    width: 40px;
+    height: 40px;
+    background-color: #747474;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: .2s;
+}
+
+.setas button:hover {
+    background-color: #fff;
+}
+
+.btn-nav-box {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    z-index: 77777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-nav-box .btn-nav {
+    width: 30px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-nav-box .btn-nav:hover {
+    background-color: #fff;
+}
+
+.btn-nav-box .btn-nav.ativo {
+    background-color: #fff;
+}
+
+.box-center {
+    flex: 1 0 auto;
+}
+
+.box-center .box-text h3 {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    font-family: "Maven Pro";
+    font-weight: 400;
+    text-align: center;
+    font-size: 48px;
+    color: #565658;
+}
+
+.div-card {
+    display: flex;
+    margin: 0 20rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 0;
+}
+
+.box-container {
+    margin: auto;
+    width: 300px;
+    padding: 0;
+}
+
+
+.box-img {
+    text-align: center;
+
+}
+
+.card-text {
+    text-align: center;
+    font-family: "Maven Pro";
+}
+
+.card-text p {
+    border: none;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.card-text h1 {
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.box-container .card-text a {
+    color: #1abc9c;
+    font-size: 14px;
+    font-family: Open Sans;
+}
+
+.box-ambiente {
+    flex: 1 0 auto;
+    position: relative;
+    height: 600px;
+    /* altura da tela inteira */
+    overflow: hidden;
+}
+
+/* imagem de fundo */
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* cobre toda a área */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+.text-card {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    margin: 10rem auto;
+    top: 50%;
+    padding: 0 20px;
+}
+
+.text-card h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: "Maven Pro";
+    font-size: 72px;
+    font-weight: 400;
+}
+
+.text-card h5 {
+    margin-top: 5rem;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    font-family: "Maven Pro";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.text-card a {
+    color: white;
+}
+
+.quem-somos {
+
+    margin: 10rem 5rem 5rem 5rem;
+    padding: 0;
+}
+
+.div-card-quem-somos {
+
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.card-text1 {
+    margin: 0;
+    padding: 0;
+}
+
+.card-text1 h5 {
+    margin-left: 1rem;
+    margin-right: 2rem;
+    font-size: 20px;
+    font-family: "Maven Pro";
+    line-height: 1.6em;
+    text-align: left;
+    font-weight: 400;
+}
+
+.card-text1 h3 {
+    color: #565658;
+    text-align: left;
+    font-size: 36px;
+    font-family: "Maven Pro";
+    margin-bottom: 50px;
+    line-height: 1.6em;
+    font-weight: 400;
+}
+
+.card-text1 a {
+    font-family: "Open Sans";
+    color: #1abc9c;
+    font-size: 17px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card-dornas img {
+    align-items: center;
+    width: 750px;
+    border-radius: 20%;
+}
+
+
+.card-text2 {
+    display: flex;
+    font-size: 20px;
+    font-family: "Maven Pro";
+}
+
+.card-text2 h1 {
+    font-weight: 400;
+}
+
+.card-text2 h2 {
+    display: flex;
+    margin: 0;
+}
+
+.localizacao {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.container-localizacao {
+
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.mapa,
+.formulario {
+    flex: 1;
+    min-width: 300px;
+}
+
+.mapa iframe {
+
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.formulario form {
+    max-width: 1000px;
+    margin-left: 25rem;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.formulario button {
+    background-color: #2c7a7b;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #27636b;
+}
+
+.localizacao h2 {
+    font-family: "Maven Pro";
+    font-weight: 400;
+}
+
+.formulario h1 {
+    font-family: "Maven Pro";
+    font-weight: 400;
+}
+
+/* QUEM SOMOS */
+
+.quem-somos-box {
+    margin: 5px -79px 64px -15px;
+    flex: 1 0 auto;
+    position: relative;
+    height: 400px;
+    object-fit: cover
+}
+
+
+.div-quem-somos {
+    margin: 110px 50px 50px 0;
+    min-height: 451px;
+    background-color: transparent;
+    background-image: url(img/Imagem\ 1.png);
+    background-size: auto 100%;
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+.card-text10 {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    margin: 0;
+    top: 250px;
+    padding: 0 20px;
+    font-size: 50px;
+}
+
+.card-text10 h1 {
+    font-size: 72px;
+    font-family: "Maven Pro";
+}
+
+.britas1 {
+    max-width: 940px;
+    margin: 0 auto;
+    z-index: 1
+}
+
+.britas-2002 {
+    margin: 0 5px 20px 0;
+    padding: 20px;
+}
+
+.britas-2002 h2 {
+    font-size: 48px;
+    font-family: "Maven Pro";
+    text-align: center;
+
+}
+
+.britas-2002 h5 {
+
+    font-size: 20px;
+    font-family: "Maven Pro";
+    font-weight: 400;
+}
+
+.card-textt h1 {
+    font-size: 48px;
+    font-family: "Maven Pro";
+    text-align: center;
+}
+
+.card-textt p {
+    font-size: 20px;
+    font-family: "Maven Pro";
+    text-align: center;
+}
+
+.box-imgg img {
+    align-items: center;
+    margin-left: 23rem;
+}
+
+/* NOSSOS PRODUTOS */
+
+.box-nossos-produtos {
+    margin: 5px -79px 64px -15px;
+    flex: 1 0 auto;
+    position: relative;
+    height: 400px;
+    object-fit: cover
+}
+
+.div-nossos-produtos {
+    margin: 110px 50px 50px 0;
+    min-height: 451px;
+    background-color: transparent;
+    background-image: url(img/pedra\ marroada.png);
+    background-size: auto 100%;
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+.card-text11 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    max-width: 800px;
+    margin: 0;
+    top: 250px;
+    padding: 0 20px;
+    font-size: 50px;
+}
+
+.card-text11 h1 {
+    font-size: 72px;
+    font-family: "Maven Pro";
+}
+
+.card-box-produtos1 {
+    margin-left: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px;
+    flex-direction: row-reverse;
+}
+
+.img-item11 img {
+    width: 550;
+    height: 500px;
+}
+
+.text-item1 {
+    margin-bottom: 20rem;
+    margin-top: 5rem;
+}
+
+.text-item1 h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Maven Pro";
+    font-weight: 300;
+}
+
+.text-item1 p {
+    font-size: 18px;
+    font-family: "Maven Pro";
+}
+
+.text-item1 h5 {
+    font-size: 18px;
+    font-family: "Maven Pro";
+    font-weight: 300;
+    margin-left: 15px;
+}
+
+.card-box-produtos2 {
+    margin-right: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px;
+    flex-direction: row;
+    flex-grow: 0.30562041785447525;
+}
+
+.img-item2 img {
+    width: 550;
+    height: 500px;
+}
+
+.text-item2 {
+    margin-bottom: 20rem;
+    text-align: justify;
+}
+
+.text-item2 h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Maven Pro";
+    font-weight: 300;
+}
+
+.text-item2 p {
+    font-size: 18px;
+    font-family: "Maven Pro";
+}
+
+.text-item2 h5 {
+    font-size: 18px;
+    font-family: "Maven Pro";
+    font-weight: 300;
+    margin-left: 15px;
+}
+
+.card-box-produtos3 {
+    margin-left: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px;
+    flex-direction: row-reverse;
+    flex-grow: 0.30562041785447525;
+}
+
+.img-item3 img {
+    width: 550;
+    height: 500px;
+}
+
+.text-item3 {
+    margin-bottom: 20rem;
+    text-align: justify;
+}
+
+.text-item3 h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Maven Pro";
+    font-weight: 300;
+}
+
+.text-item3 p {
+    font-size: 18px;
+    font-family: "Maven Pro";
+}
+
+.text-item3 h5 {
+    font-size: 18px;
+    font-family: "Maven Pro";
+    font-weight: 300;
+    margin-left: 15px;
+}
+
+.card-box-produtos4 {
+    margin-right: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px;
+    flex-direction: row;
+    flex-grow: 0.30562041785447525;
+}
+
+.img-item4 img {
+    width: 550;
+    height: 500px;
+}
+
+.text-item4 {
+    margin-bottom: 20rem;
+    text-align: justify;
+}
+
+.text-item4 h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Maven Pro";
+    font-weight: 300;
+}
+
+.text-item4 p {
+    font-size: 18px;
+    font-family: "Maven Pro";
+}
+
+.text-item4 h5 {
+    font-size: 18px;
+    font-family: "Maven Pro";
+    font-weight: 300;
+    margin-left: 15px;
+}
+
+.card-box-produtos5 {
+    margin-left: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px;
+    flex-direction: row-reverse;
+    flex-grow: 0.30562041785447525;
+
+}
+
+.img-item5 img {
+    width: 700;
+    height: 500px;
+}
+
+.text-item5 {
+    margin-bottom: 20rem;
+    text-align: justify;
+}
+
+.text-item5 h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Maven Pro";
+    font-weight: 300;
+}
+
+.text-item5 p {
+    font-size: 18px;
+    font-family: "Maven Pro";
+}
+
+.text-item5 h5 {
+    font-size: 18px;
+    font-family: "Maven Pro";
+    font-weight: 300;
+    margin-left: 15px;
+}
+
+.card-box-produtos6 {
+    margin-right: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px;
+    flex-direction: row;
+    flex-grow: 0.30562041785447525;
+}
+
+.img-item6 img {
+    width: 550;
+    height: 500px;
+}
+
+.text-item6 {
+    margin-bottom: 20rem;
+    text-align: justify;
+}
+
+.text-item6 h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Maven Pro";
+    font-weight: 300;
+}
+
+.text-item6 p {
+    font-size: 18px;
+    font-family: "Maven Pro";
+}
+
+.text-item6 h5 {
+    font-size: 18px;
+    font-family: "Maven Pro";
+    font-weight: 300;
+    margin-left: 15px;
+}
+
+.card-box-produtos7 {
+    margin-left: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px;
+    flex-direction: row-reverse;
+    flex-grow: 0.30562041785447525;
+}
+
+.img-item7 img {
+    width: 550;
+    height: 500px;
+
+
+}
+
+.text-item7 {
+    margin-bottom: 20rem;
+    text-align: justify;
+
+
+}
+
+.text-item7 h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Maven Pro";
+    font-weight: 300;
+}
+
+.text-item7 p {
+    font-size: 18px;
+    font-family: "Maven Pro";
+}
+
+.text-item7 h5 {
+    font-size: 18px;
+    font-family: "Maven Pro";
+    font-weight: 300;
+    margin-left: 15px;
+}
+
+/*SUSTENTABILIDADE*/
+
+.box-sustentabilidade {
+    margin: 104px -2vh;
+    flex: 1 0 auto;
+    position: relative;
+}
+
+.div-sustentabil {
+  
+    background-image: url("img/Jandaia 3.jpg");
+    min-height: 451px;
+    background-color: transparent;
+    background-size: auto 100%;
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+
+.card-text12 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+    font-size: 50px;
+    top: 250px;
+}
+
+.card-text12 h1 {
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.texto{
+    margin: -94px 0px -13px;
+}
+.texto-card {
+    display: inline-block;
+    position: relative;
+    margin-top: -20px;
+}
+
+.texto-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.texto-jandaia {
+    margin-left: 662px;
+    position: absolute;
+    top: 26px;
+    right: 250px;
+    font-size: 20px;
+    color: black;
+}
+
+/*CONTATO*/
+.box-contato{
+    margin: 104px -4vh;
+}
+.div-contato {
+    background-image: url("img/dornas4.jpg");
+    min-height: 451px;
+    background-color: transparent;
+    background-size: auto 100%;
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+.card-text13 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    max-width: 650px;
+    margin-left: 16rem;
+    padding: 0 20px;
+    font-size: 50px;
+
+    bottom: 244px;
+}
+
+.card-text13 h1 {
+    font-size: 72px;
+    font-family: "Maven Pro";
+}
+
+.contato-form {
+    display: flex;
+    margin-top: 1rem;
+
+}
+
+.formulario1 form {
+    margin-top: 30px;
+    max-width: 450px;
+    margin-left: 27rem;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.formulario1 input,
+.formulario1 textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.formulario1 button {
+    background-color: #2c7a7b;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.formulario1 button:hover {
+    background-color: #27636b;
+}
+
+.localizacao1 h2 {
+    font-family: "Maven Pro";
+    font-weight: 400;
+}
+
+.formulario1 h1 {
+    margin-left: 24rem;
+    text-align: center;
+    font-family: "Maven Pro";
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.contatos {
+    padding: 0 10px;
+    float: left;
+    margin: auto;
+    margin-left: 21rem;
+
+}
+
+.contatos h3 {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
+
+.contatos h2 {
+    font-weight: 400;
+    font-family: "Open Sans";
+    font-size: 22px;
+    color: #090287;
+    font-style: italic;
+}
+
+.contatos h5 {
+    font-weight: 400;
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: black;
+    font-style: italic;
+}
+
+.contatos button {
+    background-color: #25d366;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*TRABALHE CONOSCO*/
+.box-trabalho {
+    margin: 104px -2vh;
+}
+
+.div-trabalho {
+    width: 100%;
+    height: 440%;
+    /* Ajuste a altura como quiser */
+    background-image: url('./img/trabalho');
+    /* coloque sua imagem aqui */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-text14 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    margin-right: 10rem;
+    padding: 0 20px;
+    bottom: 180px;
+    font-size: 25px;
+}
+
+.card-text14 h1 {
+    font-size: 72px;
+    font-family: "Maven Pro";
+}
+
+
+
+.trabalhe-form {
+    margin-top: 18rem
+}
+
+.formulario2 {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.formulario2 h1 {
+    text-align: center;
+    font-size: 42px;
+    font-family: "Maven Pro";
+    font-weight: 400;
+}
+
+.formulario2 p {
+    padding: 0px 123px;
+    font-size: 16px;
+    font-family: "Maven Pro";
+}
+
+.formulario2 form {
+    margin-top: 30px;
+    max-width: 450px;
+    margin-left: 8rem;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.formulario2 input,
+.formulario2 textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    width: 150%;
+}
+
+.formulario2 label {
+    background-color: #1083bf;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
+#arquivo {
+    display: none;
+}
+
+.formulario2 button {
+    margin-left: 37rem;
+    background-color: #1083bf;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+
+    cursor: pointer;
+}
+
+.formulario2 button:hover {
+    background-color: #27636b;
+}
+
+.upload-container {
+    margin-top: 15px;
+}
+
+header {
+    position: relative;
+    z-index: 9999;
+    background: #fff;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Maven Pro", sans-serif;
+}
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Faz o layout principal ocupar toda a tela */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* O conteúdo principal ocupa o espaço que sobrar */
+main {
+    flex: 1;
+}
+
+/* ==== FOOTER GRUDADO NO FINAL ==== */
+footer {
+    margin: auto;
+    width: 100%;
+    background-color: #a7a7a7;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+footer .div-logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer .div-logo-footer img {
+    width: 100px;
+    height: auto;
+}
+
+footer .text-footer h1 {
+
+    font-family: "Maven Pro";
+    font-size: 24px;
+
+}
+
+footer .text-footer p {
+    font-family: "Maven Pro";
+    font-size: 16px;
+}
+
+footer .text-footer2 {
+    margin-top: 5px;
+}
+
+footer .text-footer2 h1 {
+    font-family: "Maven Pro";
+    font-size: 24px;
+}
+
+footer .text-footer2 p {
+    font-family: "Maven Pro";
+    font-size: 16px;
+}
+
+footer .icons {
+    display: flex;
+
+}
+
+footer .icons .whatsapp {
+    width: 40px;
+    height: 40px;
+}
+
+footer .icons .instagram {
+    width: 55px;
+    height: 42px;
+}
+
+footer .icons p {
+    font-family: "Maven Pro";
+    margin: auto
+}
